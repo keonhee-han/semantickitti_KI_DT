@@ -1,7 +1,7 @@
 # semantickitti_KI_DT
-KI data tooling project (https://www.ki-datatooling.de/) under visual computing &amp; AI lab @ TUM
+KI data [tooling project](https://www.ki-datatooling.de/) under visual computing &amp; AI lab @ TUM
 
-brief description with PPT file: https://docs.google.com/presentation/d/1XyEqDIZ3atFjfOsngh5KmbcIn4wPWwGMD5uNWHcleV4/edit?usp=sharing
+brief description with [PPT file](https://docs.google.com/presentation/d/1XyEqDIZ3atFjfOsngh5KmbcIn4wPWwGMD5uNWHcleV4/edit?usp=sharing)
 ![alt text](https://github.com/Kvasir8/semantickitti_KI_DT/blob/main/tSNE_GTvsPred.png)
 ![alt text](https://github.com/Kvasir8/semantickitti_KI_DT/blob/main/sample_bin2color_label.png)
 # To visualize semantickitti point cloud and its corresponding label as color
