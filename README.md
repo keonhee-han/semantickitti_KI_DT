@@ -35,5 +35,7 @@ This is a reasonable approach, assuming there is a consistent correlation betwee
 
 Applying t-SNE or UMAP to visualize the color space may help understand the correlation between colors and semantic labels, especially if there are many unique colors. These dimensionality reduction techniques can help visualize high-dimensional data in 2D or 3D, making it easier to observe clusters of similar colors. If clusters correspond to semantic classes, this may help in creating a color-to-label mapping.
 
+color to label format: https://github.com/PRBonn/semantic-kitti-api/blob/master/config/semantic-kitti.yaml
+
 However, it's important to note that t-SNE and UMAP are stochastic methods and can produce different results on different runs. Also, they do not inherently provide a way to map from the high-dimensional space to the reduced space. The reduced space is intended primarily for visualization rather than for creating mappings. So, while these methods can help visualize the color space, you will likely still need to use other methods to create precise color-to-label mapping.
 Finally, remember that this approach will only work if there is a clear and consistent correlation between colors and semantic labels in your data. If the same color is used for multiple semantic classes, or if multiple colors are used for the same semantic class, this approach may not work correctly.
