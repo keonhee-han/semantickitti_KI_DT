@@ -1,71 +1,91 @@
 Epoch: 1/10
-  img2pixel = img2pixel.T.astype(np.int32)
-[Train] Loss: 7.4383
-[Train] accuracy: 0.1509
-[Val] Loss: 14.6706
-[Val] accuracy: 0.0588
+
+[Train] Loss: 7.4291
+[Train] accuracy: 6.8955
+[Train] mIoU: 1.1156
+[Val] Loss: 14.8390
+[Val] accuracy: 4.6120
+[Val] mIoU: 0.5997
 
 Epoch: 2/10
-  img2pixel = img2pixel.T.astype(np.int32)
-[Train] Loss: 7.1358
-[Train] accuracy: 0.2250
-[Val] Loss: 13.9684
-[Val] accuracy: 0.1848
+
+[Train] Loss: 7.1818
+[Train] accuracy: 40.1164
+[Train] mIoU: 2.9372
+[Val] Loss: 13.9567
+[Val] accuracy: 18.0230
+[Val] mIoU: 1.6079
 
 Epoch: 3/10
-  img2pixel = img2pixel.T.astype(np.int32)
-[Train] Loss: 7.0115
-[Train] accuracy: 0.2529
-[Val] Loss: 13.9089
-[Val] accuracy: 0.2068
+
+[Train] Loss: 7.0333
+[Train] accuracy: 14.8502
+[Train] mIoU: 1.5857
+[Val] Loss: 13.9181
+[Val] accuracy: 19.5992
+[Val] mIoU: 1.1534
 
 Epoch: 4/10
-  img2pixel = img2pixel.T.astype(np.int32)
-[Train] Loss: 7.0074
-[Train] accuracy: 0.2993
-[Val] Loss: 13.8898
-[Val] accuracy: 0.2068
+
+[Train] Loss: 7.0038
+[Train] accuracy: 62.8933
+[Train] mIoU: 7.8650
+[Val] Loss: 13.7971
+[Val] accuracy: 21.3505
+[Val] mIoU: 1.7072
 
 Epoch: 5/10
-  img2pixel = img2pixel.T.astype(np.int32)
-[Train] Loss: 6.9906
-[Train] accuracy: 0.1662
-[Val] Loss: 13.8253
-[Val] accuracy: 0.2092
+
+[Train] Loss: 6.9881
+[Train] accuracy: 35.5813
+[Train] mIoU: 3.7107
+[Val] Loss: 13.8295
+[Val] accuracy: 21.1214
+[Val] mIoU: 1.9095
 
 Epoch: 6/10
-  img2pixel = img2pixel.T.astype(np.int32)
-[Train] Loss: 6.9881
-[Train] accuracy: 0.2937
-[Val] Loss: 13.8716
-[Val] accuracy: 0.2089
+
+[Train] Loss: 6.9898
+[Train] accuracy: 29.0876
+[Train] mIoU: 2.7571
+[Val] Loss: 13.8409
+[Val] accuracy: 21.1494
+[Val] mIoU: 1.9365
 
 Epoch: 7/10
-  img2pixel = img2pixel.T.astype(np.int32)
-[Train] Loss: 6.9845
-[Train] accuracy: 0.1681
-[Val] Loss: 13.8088
-[Val] accuracy: 0.2140
+
+[Train] Loss: 7.0250
+[Train] accuracy: 34.2977
+[Train] mIoU: 2.7925
+[Val] Loss: 13.8086
+[Val] accuracy: 21.1064
+[Val] mIoU: 1.8271
 
 Epoch: 8/10
-  img2pixel = img2pixel.T.astype(np.int32)
-[Train] Loss: 6.9793
-[Train] accuracy: 0.2893
-[Val] Loss: 13.8060
-[Val] accuracy: 0.2143
+
+[Train] Loss: 6.9878
+[Train] accuracy: 26.6828
+[Train] mIoU: 2.9789
+[Val] Loss: 13.7999
+[Val] accuracy: 21.3558
+[Val] mIoU: 1.8376
 
 Epoch: 9/10
-  img2pixel = img2pixel.T.astype(np.int32)
-[Train] Loss: 6.9753
-[Train] accuracy: 0.2626
-[Val] Loss: 13.8162
-[Val] accuracy: 0.2146
+
+[Train] Loss: 6.9776
+[Train] accuracy: 29.3783
+[Train] mIoU: 2.7308
+[Val] Loss: 13.7932
+[Val] accuracy: 21.3793
+[Val] mIoU: 2.0032
 
 Epoch: 10/10
-  img2pixel = img2pixel.T.astype(np.int32)
-[Train] Loss: 6.9753
-[Train] accuracy: 0.1686
-[Val] Loss: 13.8114
-[Val] accuracy: 0.2147
+
+[Train] Loss: 6.9767
+[Train] accuracy: 18.5009
+[Train] mIoU: 2.0352
+[Val] Loss: 13.7915
+[Val] accuracy: 21.4001
+[Val] mIoU: 1.8333
 __Training completed!
 __Visualizing both training and testing...!

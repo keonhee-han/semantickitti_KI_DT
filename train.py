@@ -53,7 +53,7 @@ def train(model, criterion, optimizer, config, train_loader, val_loader=None):
             target = one_hot_encode(indices_map).permute(2, 0, 1).unsqueeze(0)
         else:
             target = indices_map.unsqueeze(0)
-        loss, acc_train = criterion(output, target)
+        loss, acc_train, mIoU_train = criterion(output, target)
         # losses.append(loss)
         running_loss += loss.item()
 
@@ -71,7 +71,7 @@ def train(model, criterion, optimizer, config, train_loader, val_loader=None):
     epoch_loss = running_loss / len(train_loader)
     print(f"[Train] Loss: {epoch_loss:.4f}")
     print(f"[Train] accuracy: {acc_train:.4f}")
-
+    print(f"[Train] mIoU: {mIoU_train:.4f}")
 
     # Validation phase
     if val_loader:
@@ -92,13 +92,14 @@ def train(model, criterion, optimizer, config, train_loader, val_loader=None):
                 target = one_hot_encode(indices_map).permute(2, 0, 1).unsqueeze(0)
             else:
                 target = indices_map.unsqueeze(0)
-            loss, acc_val = criterion(output, target)
+            loss, acc_val, mIoU_val = criterion(output, target)
             val_loss += loss.item()
           # outputs = model(inputs)
           # val_loss += criterion(outputs, labels).item()
       val_loss /= len(val_loader)
       print(f"[Val] Loss: {val_loss:.4f}")
       print(f"[Val] accuracy: {acc_val:.4f}")
+      print(f"[Val] mIoU: {mIoU_val:.4f}")
 
   print("__Training completed!")
 
