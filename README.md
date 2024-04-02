@@ -1,41 +1,85 @@
-# semantickitti_KI_DT
-KI data [tooling project](https://www.ki-datatooling.de/) under visual computing &amp; AI lab @ TUM
+This repository contains code for training a semantic segmentation model on the SemanticKitti dataset using a Multi-Layer Perceptron (MLP) architecture.
+Project Structure
 
-brief description with [PPT file](https://docs.google.com/presentation/d/1XyEqDIZ3atFjfOsngh5KmbcIn4wPWwGMD5uNWHcleV4/edit?usp=sharing)
-![alt text](https://github.com/Kvasir8/semantickitti_KI_DT/blob/main/tSNE_GTvsPred.png)
-![alt text](https://github.com/Kvasir8/semantickitti_KI_DT/blob/main/seq07_frame964.png)
-![alt text](https://github.com/Kvasir8/semantickitti_KI_DT/blob/main/sample_bin2color_label.png)
-# To visualize semantickitti point cloud and its corresponding label as color
-Sample data for the test is available under test folder.
-To visualize a .bin file in open3d, execute the following as an example.
-```bash
-cd baselines
-python3 viz_bin2pcd_c.py
-```
-It will prompt to specify the .bin file and optionally the corresponding label file. Example to type:
-```bash
-test/000964.bin
-test/000964.label
-```
-# To visualize the .pcd file
-```bash
-python3 viewer.py
-test/964merged_hpr
-```
+The project is organized into the following directories:
 
-it will show color labeled point cloud in a frame, which can be used for better intuition of how to find a corresponding color label for the prediction of .pcd file (where it doesn't contain class label information e.g. blue=ground, green=forest)
+├── configs
+│   ├── config.json
+│   ├── data_loader_backup.py
+│   ├── data_loader.py
+│   ├── loss.py
+│   ├── optimizer.py
+│   └── __pycache__
+├── data
+│   ├── 00
+│   ├── 01
+│   ├── 02
+│   ├── 03
+│   ├── 04
+│   ├── 05
+│   ├── 06
+│   ├── 07
+│   ├── 08
+│   ├── 09
+│   └── 10
+├── main.py
+├── models
+│   ├── __pycache__
+│   └── semantic_segmentation_mlp.py
+├── __pycache__
+│   └── train.cpython-38.pyc
+├── README.md
+├── requirements.txt
+├── training_log.txt
+├── train.py
 
-# Idea to annotate label from .pcd format with its ground truth label
-Convert .bin files from SemanticKITTI to .pcd format.
-Visualize both ground truth and predicted point clouds (which are color-annotated) using Open3D.
-By comparing the colors, determine a mapping from colors to semantic labels.
-Use this color-to-label mapping to convert the color-annotated point clouds to label-annotated point clouds.
-Evaluate the predicted labels against the ground truth labels.
-This is a reasonable approach, assuming there is a consistent correlation between colors and semantic labels in your predicted data and the SemanticKITTI ground truth.
+    configs/: This directory stores configuration files for different training components.
+        data_loader.py: This file defines the SemanticKittiDataLoader class for loading and processing SemanticKitti data.
+        data_loader_backup.py: blue print script
+        loss.py: This file defines the CrossEntropyLoss class for calculating the cross-entropy loss for semantic segmentation.
+        optimizer.py: This file defines the AdamOptimizer class for using the Adam optimizer during training.
+    data/: This directory stores the actual semantic segmentation data (assuming SemanticKitti format here).
+    eval.py: This file defines logic for evaluating the trained model on a validation set.
+    main.py: This file serves as the entry point for your training script. It loads configurations, prepares data loaders, defines the model and optimizer, and then calls the training function.
+    models/: This directory contains the model definition.
+        semantic_segmentation_mlp.py: This file defines the SemanticSegmentationMLP class for the semantic segmentation model using an MLP architecture.
+    train.py: This file defines the train function that performs the actual training loop, handling data loading, forward pass, backpropagation, and optimization steps.
 
-Applying t-SNE or UMAP to visualize the color space may help understand the correlation between colors and semantic labels, especially if there are many unique colors. These dimensionality reduction techniques can help visualize high-dimensional data in 2D or 3D, making it easier to observe clusters of similar colors. If clusters correspond to semantic classes, this may help in creating a color-to-label mapping.
+Running the Project
 
-color to label format: https://github.com/PRBonn/semantic-kitti-api/blob/master/config/semantic-kitti.yaml
+    Install dependencies: Make sure you have PyTorch and other required libraries installed. You can use a package manager like pip to install them.
+    Prepare data: Download the SemanticKitti dataset and place it in the data directory.
+    Configure training: Edit the configuration files in the configs directory to adjust hyperparameters like learning rate, batch size, etc.
+    Train the model: Run the main.py script. This will train the model on the provided data.
+    Evaluate the model: Use the eval.py script to evaluate the trained model on a validation set (if available).
 
-However, it's important to note that t-SNE and UMAP are stochastic methods and can produce different results on different runs. Also, they do not inherently provide a way to map from the high-dimensional space to the reduced space. The reduced space is intended primarily for visualization rather than for creating mappings. So, while these methods can help visualize the color space, you will likely still need to use other methods to create precise color-to-label mapping.
-Finally, remember that this approach will only work if there is a clear and consistent correlation between colors and semantic labels in your data. If the same color is used for multiple semantic classes, or if multiple colors are used for the same semantic class, this approach may not work correctly.
+Getting Started
+
+    Clone this repository:
+
+Bash
+
+git clone 
+
+Use code with caution.
+
+    Install dependencies:
+
+Bash
+
+pip install -r requirements.txt
+
+Use code with caution.
+
+    (Optional) Download the SemanticKitti dataset and place it in the data directory.
+
+    Train the model:
+
+Bash
+
+python main.py
+
+Use code with caution.
+Contributing
+
+We welcome contributions to this project. Feel free to fork the repository, make changes, and submit pull requests.

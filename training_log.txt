@@ -1,0 +1,71 @@
+Epoch: 1/10
+  img2pixel = img2pixel.T.astype(np.int32)
+[Train] Loss: 7.4383
+[Train] accuracy: 0.1509
+[Val] Loss: 14.6706
+[Val] accuracy: 0.0588
+
+Epoch: 2/10
+  img2pixel = img2pixel.T.astype(np.int32)
+[Train] Loss: 7.1358
+[Train] accuracy: 0.2250
+[Val] Loss: 13.9684
+[Val] accuracy: 0.1848
+
+Epoch: 3/10
+  img2pixel = img2pixel.T.astype(np.int32)
+[Train] Loss: 7.0115
+[Train] accuracy: 0.2529
+[Val] Loss: 13.9089
+[Val] accuracy: 0.2068
+
+Epoch: 4/10
+  img2pixel = img2pixel.T.astype(np.int32)
+[Train] Loss: 7.0074
+[Train] accuracy: 0.2993
+[Val] Loss: 13.8898
+[Val] accuracy: 0.2068
+
+Epoch: 5/10
+  img2pixel = img2pixel.T.astype(np.int32)
+[Train] Loss: 6.9906
+[Train] accuracy: 0.1662
+[Val] Loss: 13.8253
+[Val] accuracy: 0.2092
+
+Epoch: 6/10
+  img2pixel = img2pixel.T.astype(np.int32)
+[Train] Loss: 6.9881
+[Train] accuracy: 0.2937
+[Val] Loss: 13.8716
+[Val] accuracy: 0.2089
+
+Epoch: 7/10
+  img2pixel = img2pixel.T.astype(np.int32)
+[Train] Loss: 6.9845
+[Train] accuracy: 0.1681
+[Val] Loss: 13.8088
+[Val] accuracy: 0.2140
+
+Epoch: 8/10
+  img2pixel = img2pixel.T.astype(np.int32)
+[Train] Loss: 6.9793
+[Train] accuracy: 0.2893
+[Val] Loss: 13.8060
+[Val] accuracy: 0.2143
+
+Epoch: 9/10
+  img2pixel = img2pixel.T.astype(np.int32)
+[Train] Loss: 6.9753
+[Train] accuracy: 0.2626
+[Val] Loss: 13.8162
+[Val] accuracy: 0.2146
+
+Epoch: 10/10
+  img2pixel = img2pixel.T.astype(np.int32)
+[Train] Loss: 6.9753
+[Train] accuracy: 0.1686
+[Val] Loss: 13.8114
+[Val] accuracy: 0.2147
+__Training completed!
+__Visualizing both training and testing...!

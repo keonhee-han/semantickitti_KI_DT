@@ -1,0 +1,18 @@
+{
+    "data_dir": "data",
+    "model": {
+      "in_features": 384,  
+      "num_classes": 20  
+    },
+    "epochs": 10,
+    "batch_size": 1,
+    "num_workers": 4,
+    "optimizer": {
+      "learning_rate": 0.001,
+      "beta1": 0.9,
+      "beta2": 0.999,
+      "epsilon": 1e-8,
+      "weight_decay": 0.0
+    }
+  }
+  
