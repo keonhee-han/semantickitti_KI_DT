@@ -1,6 +1,6 @@
 # Self-Supervised Learning via DiNO features and its Pseudo-GT labeled segments via SAM in SemanticKITTI
 
-![alt text](https://github.com/Kvasir8/semantickitti_KI_DT/blob/main/tSNE_GTvsPred.png)
+![alt text](https://github.com/keonhee-han/semantickitti_KI_DT/blob/main/testset_pseudo_label.png)
 
 This repository contains code for training a semantic segmentation model on the SemanticKitti dataset using a Multi-Layer Perceptron (MLP) architecture.
 Project Structure
