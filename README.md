@@ -1,3 +1,7 @@
+# Self-Supervised Learning via DiNO features and its Pseudo-GT labeled segments via SAM in SemanticKITTI
+
+![alt text](https://github.com/Kvasir8/semantickitti_KI_DT/blob/main/tSNE_GTvsPred.png)
+
 This repository contains code for training a semantic segmentation model on the SemanticKitti dataset using a Multi-Layer Perceptron (MLP) architecture.
 Project Structure
 
@@ -53,13 +57,14 @@ Running the Project
     Train the model: Run the main.py script. This will train the model on the provided data.
     Evaluate the model: Use the eval.py script to evaluate the trained model on a validation set (if available).
 
-Getting Started
+
+# Getting Started
 
     Clone this repository:
 
 Bash
 
-git clone 
+git clone
 
 Use code with caution.
 
